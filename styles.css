@@ -72,9 +72,11 @@ h1 {
   transition-timing-function: ease-in;
 }
 
+@media (min-width: 1200px) {
 .num-button:hover {
   background-color: #9D5C0D;
   transform: scale(1.05);
+}
 }
 
 
