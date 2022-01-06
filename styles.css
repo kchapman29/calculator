@@ -1,0 +1,152 @@
+:root {
+  --main-bg-color: #D8E3E7;
+  --calculator-color: #9D9D9D;
+  --button-color: #F58840;
+}
+
+
+body {
+  font-family: "Titillium-Web", sans-serif;
+  background-color: var(--main-bg-color);
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 75px;
+}
+
+.calculator {
+  background-color: var(--calculator-color);
+  width: 500px;
+  margin: 0 auto;
+  height: 800px;
+  border-radius: 5%;
+}
+
+.screen {
+  background-color: black;
+  width: 80%;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+  border-radius: 3%;
+
+}
+
+.screen-display {
+  color: white;
+  width: 95%;
+  height: 100%;
+  font-size: 5rem;
+  text-align: right;
+  margin: auto;
+  line-height: 160px;
+}
+
+.buttons {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  padding: 0;
+  width: 80%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.num-button {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 100%;
+  background-color: var(--button-color);
+  border-width: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in;
+}
+
+.num-button:hover {
+  background-color: #9D5C0D;
+  transform: scale(1.05);
+}
+
+
+.zero {
+  grid-column: span 2;
+  grid-row: 5;
+  width: 195px;
+  height: 92.5px;
+  border-radius: 10vw;
+}
+
+.one {
+ grid-column: 1;
+ grid-row: 4;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.four {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.five {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.six {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.seven {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.eight {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.nine {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.clear {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.change-sign {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.percent {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.dot {
+  grid-column: 3;
+  grid-row: 5;
+}
